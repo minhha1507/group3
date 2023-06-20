@@ -1,5 +1,7 @@
 var app = angular.module("myAPP", ["ngRoute"]);
-        app.config(function ($routeProvider, $locationProvider) {
+        // app.config(function ($routeProvider, $locationProvider) {
+            app.config(function ($routeProvider) {
+                $routeProvider
             $routeProvider
                 .when("/", {
                     templateUrl: "homepage.html"
@@ -38,7 +40,7 @@ var app = angular.module("myAPP", ["ngRoute"]);
                     controllerAs: 'cart'
                 });
 
-                $locationProvider.html5Mode(true).hashPrefix('*');;
+                // $locationProvider.html5Mode(true).hashPrefix('*');;
         });
 
 
